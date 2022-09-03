@@ -31,7 +31,7 @@ class GameConfig:
     DEBUG: bool = False
     NAME: str = "STEAM Valley"
     FPS: int = 60
-    WIDTH: int = 1248
+    WIDTH: int = 1366
     HEIGHT: int = 768
     TILE_SIZE: int = 48
     PLAYER_SOFT_EDGE_WIDTH: int = 300
@@ -132,7 +132,7 @@ class ShadowBossConfig:
     ANIMATION_INTERVAL_MS: int = 200
     SPEED: int = 1
     DAMAGE: int = 1
-    INITIAL_HP: int = 100
+    INITIAL_HP: int = 1000
 
     ANGRY_INTERVAL_MS: int = 7000
     ANGRY_DURATION_MS: int = 2000
