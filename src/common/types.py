@@ -17,29 +17,19 @@ class EntityType(enum.Enum):
     EMPTY = 0
     GROUND_A = 1
     GROUND_B = 2
-
     PLAYER = 20
     SHADOW = 21
     NPC_CO_NGA = 22
     NPC_CHU_NAM = 23
     NPC_CHU_NHAN = 24
     SHADOW_ALPHA = 25
-
     TRAMPOLINE = 30
     TRAMPOLINE_PART_SPRING = 31
     TRAMPOLINE_PART_FRAME = 32
-
     SHADOW_BOSS = 40
-
-    # Collectable Items 60 -> 79
     CANDY = 60
     HEART = 61
-
-    # When the player collects this item, the level ends.
-    # For regular levels (ie. no special end-level condition), when designing the CSV file
-    # you can put this item at the end of the map.
     LEVEL_END_FLAG = 99
-
     QUESTION_MARK = 101
     DIALOGUE_BOX = 102
     PLAYER_BULLET = 103

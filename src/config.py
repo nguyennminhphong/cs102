@@ -28,10 +28,10 @@ class Color:
 
 
 class GameConfig:
-    DEBUG: bool = False
+    DEBUG: bool = True
     NAME: str = "STEAM Valley"
     FPS: int = 60
-    WIDTH: int = 1248
+    WIDTH: int = 1366
     HEIGHT: int = 768
     TILE_SIZE: int = 48
     PLAYER_SOFT_EDGE_WIDTH: int = 300
@@ -107,7 +107,7 @@ class PlayerInventoryConfig:
 class PlayerBulletConfig:
     SPRITE_PATH: Path = ASSET_DIR / "items" / "player_bullet.png"
     SCALE: float = 0.7
-    SPEED: int = 35
+    SPEED: int = 50
     GRAVITY: int = 2
     DAMAGE: int = 10
 
@@ -122,7 +122,7 @@ class ShadowConfig:
     SPRITE_PATH: Path = ASSET_DIR / "npcs" / "shadow"
     SCALE: float = 0.2
     ANIMATION_INTERVAL_MS: int = 200
-    SPEED: int = 1
+    SPEED: int = 0.5
     DAMAGE: int = 1
 
 
@@ -132,12 +132,12 @@ class ShadowBossConfig:
     ANIMATION_INTERVAL_MS: int = 200
     SPEED: int = 1
     DAMAGE: int = 1
-    INITIAL_HP: int = 100
+    INITIAL_HP: int = 1000
 
-    ANGRY_INTERVAL_MS: int = 7000
+    ANGRY_INTERVAL_MS: int = 1000
     ANGRY_DURATION_MS: int = 2000
 
-    HURT_DURATION_MS: int = 500
+    HURT_DURATION_MS: int = 1000
 
 
 class ShadowBulletConfig:
@@ -146,11 +146,7 @@ class ShadowBulletConfig:
     SPEED: int = 5
     GRAVITY: int = 0.3
     DAMAGE: int = 1
-
-    # initial vertical movement
     INIT_DY: int = -15
-
-    # the time between creation and deletion of entities of this type
     TTL_MS: int = 3000
 
 

@@ -13,7 +13,6 @@ logger = logging.getLogger(__name__)
 
 
 class ShadowBoss(Shadow):
-    """Boss (a large shadow)."""
 
     HP_BAR_HEIGHT: int = 20
     HP_TEXT_HEIGHT_OFFSET: int = -40
@@ -69,7 +68,7 @@ class ShadowBoss(Shadow):
         if self.hp > 0:
             util.display_text(
                 screen,
-                f"{self.hp} / 100",
+                f"{self.hp} / 1000",
                 x=self.rect.x,
                 y=self.rect.top + self.HP_TEXT_HEIGHT_OFFSET,
                 color=Color.BOSS_HP_BAR,
@@ -87,4 +86,5 @@ class ShadowBoss(Shadow):
             )
 
     def __del__(self):
-        GameEvent(EventType.VICTORY).post()
+        if self.hp <= 0:
+            GameEvent(EventType.VICTORY).post()
