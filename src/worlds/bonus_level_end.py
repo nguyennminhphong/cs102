@@ -15,8 +15,8 @@ class BonusLevelEnd(BaseScene):
 
     def tick(self, events: Sequence[GameEvent]) -> bool:
         super().tick(events)
-        # TODO: clean up, move hardcoded values to configs
         util.display_text(
+
             self.screen,
             text="Congratulations! You won the bonus level!",
             x=200,

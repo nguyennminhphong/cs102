@@ -139,9 +139,9 @@ class ShadowBossConfig:
     ANIMATION_INTERVAL_MS: int = 200
     SPEED: int = 2.5
     DAMAGE: int = 1
-    INITIAL_HP: int = 10
+    INITIAL_HP: int = 1000
 
-    ANGRY_INTERVAL_MS: int = 1000
+    ANGRY_INTERVAL_MS: int = 3000
     ANGRY_DURATION_MS: int = 2000
 
     HURT_DURATION_MS: int = 1000
